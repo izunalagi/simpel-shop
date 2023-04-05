@@ -17,8 +17,8 @@ use Illuminate\Http\Middleware\Authenticate;
 */
 
 Route::get('/', function () {
-    return view('home.index');
-})->name('product.welcome');
+    return view('welcome');
+})->name('welcome');
 
 
 Route::middleware(['auth'])->group(function(){
@@ -28,12 +28,13 @@ Route::post('/product/store', [ProductsController::class,'store'])->name('produc
 Route::get('/product/edit/{id}', [ProductsController::class,'edit'])->name('product.edit');
 Route::put('/product/update/{id}', [ProductsController::class,'update'])->name('product.update');
 Route::post('/product/destroy/{id}', [ProductsController::class,'destroy'])->name('product.destroy');
-Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/beranda', function() {
     return view('home.index');
 })->name('home.index');
+
 });
 
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/profile', function (){
 
