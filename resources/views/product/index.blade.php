@@ -3,7 +3,6 @@
 @section('title', 'Post')
 
 @section('content')
-    <h1>just test</h1>
     <div class="container">
         <a class="btn btn-primary" href="{{ route('product.create') }}" role="button">Create</a>
         <a class="btn btn-primary" href="{{ route('home.index') }}" role="button">Kembali</a>
