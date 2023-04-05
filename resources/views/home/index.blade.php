@@ -8,7 +8,7 @@
         @for ($i = 1; $i < 5; $i++)
             <div class="col-3">
                 <div class="card">
-                    <img src="https://i.top4top.io/p_2651iuwoz1.jpg" class="card-img-top" alt="...">
+                    <img src="https://j.top4top.io/p_2651svwz01.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title {{ $i }}</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
